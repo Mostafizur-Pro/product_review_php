@@ -7,13 +7,12 @@
     <title>Dashboard</title>
     <!-- Maid CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/dashboard/dashboard.css" />
 
     <!-- Navbar -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
-    <!-- Footer -->
-    <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+   
 </head>
 
 <body>
@@ -30,14 +29,7 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
-
-    <div>
-        <?php
-        include_once "footer.php";
-        ?>
-    </div>
-
+  
 </body>
 
 </html>
