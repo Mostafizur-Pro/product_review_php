@@ -31,6 +31,8 @@
         <div>
             <?php
             include_once "components/contact/contactForm.php" ?>
+            <?php
+            include_once "components/contact/maps.php" ?>
 
         </div>
     </div>

@@ -25,8 +25,10 @@
             <ul class="contact-list">
                 <li class="list-item">
                     <i class="fa fa-map-marker fa-2x"></i>
-                    <span class="contact-text place">
-                        Mirpur-12, Dhaka</span>
+                    <span class="contact-text place"> House 203, Flat B7, Level-4
+                        <br>
+                        <span style="margin-left: 10px;"> Road 2, Avenue 3, Dhaka-1216</span>
+                    </span>
                 </li>
                 <li class="list-item">
                     <i class="fa fa-phone fa-2x"></i>
