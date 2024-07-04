@@ -1,0 +1,173 @@
+#contact {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #1b1b1b;
+}
+
+.Contact-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  font: 300 40px "Oswald", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 840px;
+}
+
+.form-horizontal {
+  width: 100%;
+  max-width: 400px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+
+.form-control,
+textarea {
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.send-button {
+  width: 100%;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.send-button:hover {
+  background-color: #004099;
+}
+
+.direct-contact-container {
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #bbb;
+}
+
+.list-item i {
+  margin-right: 10px;
+}
+
+.contact-text {
+  font: 300 16px "Lato", sans-serif;
+}
+
+.contact-text a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-text a:hover {
+  color: #fff;
+}
+
+.social-media-list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.social-media-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-media-list li:hover {
+  background-color: #fff;
+  transform: scale(1.1);
+}
+
+.social-media-list li a {
+  color: #fff;
+  font-size: 24px;
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px "Oswald", sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, 0.2);
+  margin: 20px 0;
+}
+
+@media (min-width: 850px) {
+  .contact-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .direct-contact-container,
+  .form-horizontal {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 569px) {
+  .form-control,
+  textarea {
+    width: 100%;
+  }
+
+  .direct-contact-container {
+    margin-top: 40px;
+    max-width: 280px;
+  }
+
+  .social-media-list li {
+    width: 50px;
+    height: 50px;
+  }
+}

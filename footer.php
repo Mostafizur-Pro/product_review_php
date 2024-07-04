@@ -1,3 +1,4 @@
+
 <footer class="footer-section">
     <div class="logo">
         <h2>Logo</h2>

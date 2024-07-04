@@ -7,13 +7,16 @@
     <title>Contact</title>
     <!-- Maid CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
-
+    <!-- Contact CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/contact/contact.css" />
     <!-- Navbar -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
     <!-- Footer -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+
+    <script src="js/contact/contact.js"></script>
 </head>
 
 <body>
