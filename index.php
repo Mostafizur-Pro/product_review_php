@@ -7,6 +7,8 @@
     <title>Product Review</title>
     <!-- Maid CSS -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
+    <!-- Hero -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/home/banner.css" />
     <!-- Navbar -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
     <!-- Footer -->
@@ -22,9 +24,13 @@
         include_once "navbar.php";
         ?>
     </div>
-
+    <!-- Home Page -->
     <div>
-        Index
+        <div>
+            <?php
+            include_once "components/home/banner.php" ?>
+
+        </div>
     </div>
 
     <!-- Footer Section -->
