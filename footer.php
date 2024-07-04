@@ -59,9 +59,8 @@
     </div>
 
     <div class="copyright-text">
-        <p>Copyright &copy; 2024, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+        <p>Copyright &copy; 2024, All Right Reserved </p>
     </div>
 
 
 </footer>
-

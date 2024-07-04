@@ -1,4 +1,4 @@
-<nav>
+<nav class="nav-section">
     <div class="logo">
         <h2>Logo</h2>
     </div>

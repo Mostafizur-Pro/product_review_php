@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review</title>
-
+    <!-- Maid CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
     <!-- Navbar -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
     <!-- Footer -->
@@ -21,6 +22,7 @@
         include_once "navbar.php";
         ?>
     </div>
+
     <div>
         Index
     </div>
