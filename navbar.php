@@ -5,10 +5,10 @@
     <div class="nav-items">
         <ul class="overview">
             <li> <a href="/product_review"> Home </a> </li>
-            <li><a href="#"> Product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="/product_review/product.php"> Product</a></li>
+            <li><a href="/product_review/about.php">About</a></li>
+            <li><a href="/product_review/contact.php">Contact</a></li>
+            <li><a href="/product_review/dashboard.php">Dashboard</a></li>
         </ul>
         <ul class="account">
             <li><a href="/product_review/login.php">Login </a></li>
