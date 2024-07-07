@@ -11,8 +11,6 @@ $result = $conn->query($sql);
     include_once "components/product/leftSideCategory.php"
     ?>
 
-
-
     <!-- Main Content -->
     <div class="main-content">
         <?php
@@ -27,7 +25,8 @@ $result = $conn->query($sql);
                 echo '<h1>' . $row["name"] . '</h1>';
                 echo '<p class="price">$' . number_format($row["price"], 2) . '</p>';
                 echo '<p class="description">' . $row["description"] . '</p>';
-                echo '<button class="add-to-cart">Add to Cart</button>';
+                echo '<button class="add-to-cart"><a href="/product_review/components/product/productById.php?id=' . $row["id"] . '" >See More</a></button>';
+                
                 echo '</div>';
                 echo '</div>';
             }

@@ -12,7 +12,7 @@
 
     <!-- Navbar -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
-   
+
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         </div>
     </div>
 
-  
+
 </body>
 
 </html>
