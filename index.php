@@ -10,6 +10,7 @@
     <!-- Hero -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/home/banner.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/product/singleProduct.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/home/gallery.css" />
     <!-- Navbar -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
     <!-- Footer -->
@@ -30,12 +31,15 @@
         <div>
             <?php
             include_once "components/home/banner.php" ?>
-
         </div>
         <div>
             <?php
             include_once "components/home/product.php" ?>
-
+        </div>
+        <div>
+        <h1 class="gallery-text">Our Gallery</h1>
+            <?php
+            include_once "components/home/gallery.php" ?>
         </div>
     </div>
 

@@ -1,4 +1,3 @@
-
 <footer class="footer-section">
     <div class="logo">
         <h2>Logo</h2>
@@ -34,32 +33,27 @@
         </div>
         <div class="footer-useful">
             <div>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="/product_review">Home</a></li>
+                <li><a href="/product_review/about.php">About us</a></li>
+                <li><a href="/product_review/product.php">Product</a></li>
+                <li><a href="/product_review/contact.php">Contact</a></li>
             </div>
             <div>
                 <li><a href="#">Our Services</a></li>
                 <li><a href="#">Expert Team</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="/product_review/contact.php">Contact us</a></li>
                 <li><a href="#">Latest News</a></li>
             </div>
             <div>
-
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Privacy</a></li>
                 <li><a href="#">Policy</a></li>
-                <li><a href="#">Contact</a></li>
-
             </div>
         </div>
 
     </div>
 
-    <div class="copyright-text">
+    <div class="copyright-text" style="margin-top:20px ;">
         <p>Copyright &copy; 2024, All Right Reserved </p>
     </div>
 
