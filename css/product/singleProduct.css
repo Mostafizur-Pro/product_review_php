@@ -186,6 +186,7 @@
   border-radius: 8px;
   overflow: hidden;
   width: 300px;
+  margin-top: 20px;
 }
 
 .product-card:hover {

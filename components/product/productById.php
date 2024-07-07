@@ -40,6 +40,17 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     exit;
 }
 
+$sql_reviews = "SELECT * FROM submit_review WHERE product_id = ?";
+$stmt_reviews = $conn->prepare($sql_reviews);
+$stmt_reviews->bind_param("i", $product_id);
+
+if ($stmt_reviews->execute()) {
+    $result_reviews = $stmt_reviews->get_result();
+    $reviews = $result_reviews->fetch_all(MYSQLI_ASSOC);
+} else {
+    echo "Error fetching reviews: " . $stmt_reviews->error;
+}
+
 // Handle form submission for adding reviews
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['submit_review'])) {
@@ -62,8 +73,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt_insert_review->bind_param("iissss", $product_id, $user_id, $rating, $comment, $created_at, $updated_at);
 
         if ($stmt_insert_review->execute()) {
-            echo '<script>alert("Review added successfully.");</script>';
-            // Optionally redirect or perform additional actions after successful review submission
+            // Redirect to the same page to refresh after adding the review
+            header("Location: {$_SERVER['PHP_SELF']}?id=$product_id&review_added=true");
+            exit;
         } else {
             echo "Error executing SQL statement: " . $stmt_insert_review->error;
         }
@@ -128,15 +140,46 @@ $conn->close();
     </div>
 
 
+    <!-- Reviews Section -->
+    <div class="reviews-section">
+        <h2>Product Reviews</h2>
+        <?php if (!empty($reviews)) : ?>
+            <div class="reviews-list">
+                <?php foreach ($reviews as $review) : ?>
+                    <div class="review">
+                        <h1>
+                            <?php echo htmlspecialchars($review['comment']); ?>
+                        </h1>
+                        <div class="star-rating">
+                            <?php
+                            // Determine number of stars to show based on rating
+                            $rating = intval($review['rating']);
+                            for ($i = 1; $i <= 5; $i++) {
+                                if ($i <= $rating) {
+                                    echo '<i class="fas fa-star"></i>'; // Full star
+                                } else {
+                                    echo '<i class="far fa-star"></i>'; // Empty star
+                                }
+                            }
+                            ?>
+                        </div>
+
+                        <h1 class="review-date">
+                            Posted On: <?php echo htmlspecialchars($review['created_at']); ?>
+                        </h1>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        <?php else : ?>
+            <p>No reviews yet.</p>
+        <?php endif; ?>
+    </div>
     <!-- End Reviews Section -->
 
     <!-- Review Form Section -->
     <div class="review-form">
         <h3>Add a Review</h3>
         <form method="POST" action="">
-            <!-- <label for="user_name">Your Name:</label><br> -->
-            <!-- <input type="text" id="user_name" name="user_name" required><br><br> -->
-
             <label for="rating">Rating:</label><br>
             <select id="rating" name="rating" required>
                 <option value="1">1 - Poor</option>
@@ -153,6 +196,50 @@ $conn->close();
         </form>
     </div>
     <!-- End Review Form Section -->
+
+
+    <div class="product-container">
+        <?php
+        $serverName = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "products_db";
+
+        // Create connection
+        $conn = new mysqli($serverName, $username, $password, $dbname);
+
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "SELECT * FROM products LIMIT 3"; // Limit the query to fetch only 3 products
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            while ($row = $result->fetch_assoc()) {
+                echo '<div class="product-card">';
+                echo '<div class="product-image">';
+                echo '<img src="' . htmlspecialchars($row["image"]) . '" alt="Product Image">';
+                echo '</div>';
+                echo '<div class="product-info">';
+                echo '<h2 class="product-title">' . htmlspecialchars($row["name"]) . '</h2>';
+                echo '<p class="product-description">' . htmlspecialchars($row["description"]) . '</p>';
+                echo '<p class="product-price">$' . number_format($row["price"], 2) . '</p>';
+                echo '<a href="product.php?id=' . $row["id"] . '" class="btn btn-view-details">View Details</a>';
+                echo '</div>';
+                echo '</div>';
+            }
+        } else {
+            echo "No products found.";
+        }
+
+        // Close connection
+        $conn->close();
+        ?>
+    </div>
+
+
 
     <div>
         <?php include_once "../../footer.php"; ?>
