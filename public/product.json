@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone XYZ",
+    "category": "Mobile Phones",
+    "price": 699.99,
+    "description": "A high-end smartphone with a 6.5-inch display, 128GB storage, and a powerful camera system.",
+    "image": "https://d2j6dbq0eux0bg.cloudfront.net/images/15537018/1408324852.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Laptop ABC",
+    "category": "Laptops",
+    "price": 1199.99,
+    "description": "A lightweight laptop with a 15-inch display, 512GB SSD, and 16GB RAM, perfect for work and entertainment.",
+    "image": "https://i5.walmartimages.com/seo/Lenovo-ThinkBook-13-3-Laptop-AMD-Ryzen-7-4800U-512GB-SSD-Windows-10-Pro-20WC0005US_1239580a-a62d-4d26-a051-a56b14aad654.aa78c7d020886df177545a4328ef00e8.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF"
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker QWE",
+    "category": "Audio",
+    "price": 49.99,
+    "description": "A portable Bluetooth speaker with excellent sound quality and a long-lasting battery.",
+    "image": "https://th.bing.com/th/id/OIP.5Bt3xOm7nMTj6qp6YPYxigHaEK?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 4,
+    "name": "4K TV DEF",
+    "category": "Televisions",
+    "price": 799.99,
+    "description": "A 55-inch 4K Ultra HD TV with HDR support and smart features for streaming your favorite shows.",
+    "image": "https://th.bing.com/th/id/R.e5e8887dfacd7836e5e88aa6f0300acc?rik=HgMtgOejqZCUqQ&pid=ImgRaw&r=0"
+  },
+  {
+    "id": 5,
+    "name": "Smartwatch GHI",
+    "category": "Wearables",
+    "price": 199.99,
+    "description": "A stylish smartwatch with fitness tracking, heart rate monitoring, and notification alerts.",
+    "image": "https://th.bing.com/th/id/OIP.5cXzquryCz4nFaZZzLpuEQHaEK?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 6,
+    "name": "Gaming Console JKL",
+    "category": "Gaming",
+    "price": 499.99,
+    "description": "A next-gen gaming console with 4K gaming, a powerful processor, and an extensive game library.",
+    "image": "https://th.bing.com/th/id/OIP.BQpmJbD-23bhGnsiGbIxygHaE8?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 7,
+    "name": "Wireless Headphones MNO",
+    "category": "Audio",
+    "price": 149.99,
+    "description": "Noise-cancelling wireless headphones with high-quality sound and a comfortable fit.",
+    "image": "https://th.bing.com/th/id/OIP.SqiWbhIgItuGPYh_2xs-XQHaHa?rs=1&pid=ImgDetMain"
+  },
+  {
+    "id": 8,
+    "name": "Tablet PQR",
+    "category": "Tablets",
+    "price": 329.99,
+    "description": "A 10-inch tablet with 64GB storage, perfect for reading, browsing, and entertainment.",
+    "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-2022-hero-silver-wifi-select?wid=470&hei=556&fmt=jpeg&qlt=95&.v=1665677520473"
+  },
+  {
+    "id": 9,
+    "name": "Smart Home Assistant STU",
+    "category": "Smart Home",
+    "price": 89.99,
+    "description": "A smart home assistant with voice control, music streaming, and smart device integration.",
+    "image": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6417/6417019_sd.jpg;maxHeight=640;maxWidth=550"
+  },
+  {
+    "id": 10,
+    "name": "Digital Camera VWX",
+    "category": "Cameras",
+    "price": 449.99,
+    "description": "A digital camera with 24MP resolution, 4K video recording, and a range of creative features.",
+    "image": "https://cdn.komachine.com/media/product/vieworks_19020_wfzyvg.jpg"
+  }
+]
