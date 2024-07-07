@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/app.css" />
     <!-- Hero -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/home/banner.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/product/singleProduct.css" />
     <!-- Navbar -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css" />
     <!-- Footer -->
@@ -29,6 +30,11 @@
         <div>
             <?php
             include_once "components/home/banner.php" ?>
+
+        </div>
+        <div>
+            <?php
+            include_once "components/home/product.php" ?>
 
         </div>
     </div>

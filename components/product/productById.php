@@ -198,7 +198,7 @@ $conn->close();
     <!-- End Review Form Section -->
 
 
-    <div class="product-container">
+    <div class="product-container ">
         <?php
         $serverName = "localhost";
         $username = "root";
